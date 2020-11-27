@@ -41,6 +41,8 @@ function draw(){
 }
 //write the new position of the ball to the data base
 function writePosition(x,y){
+    //set will set new values to the x and yinside the data base
+    //position.x=recent position of the ball from the data base and x=new position of hypnotic ball on the canvas(when moved with w,a,s,d keys)
     database.ref('ball/position').set({
      'x':position.x+x,
      'y':position.y+y
